@@ -139,3 +139,8 @@ NOTA: Investiga las funciones para leer en un bucle while antes de lanzarte al p
 
 Crea un proceso que escriba "Interrúmpeme si puedes soy el PID: <pid>" y duerma 1 segundo. Cuando el usuario intente hacer un Ctrl+C el proceso manejará la situeción y se clonará con Fork.
 
+### Pipes y señales
+
+Escribe un programa en C que cree 1 hijo. El programa hijo genererá números aleatorios entre 0 y 10 y se los enviará al padre a través de un pipe. El padre los irá sumando pero cuando el hijo le mande un 0 el padré le enviará una señal para detenerlo. El padré después esperará a que el hijo muera y mostrará la suma.
+
+NOTA: Para depurar es recomendable que el hijo muestre los número mandados al padre
