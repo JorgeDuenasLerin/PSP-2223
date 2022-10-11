@@ -1,4 +1,6 @@
-# Práctica multiproceso
+# Práctica multiproceso y comunicación
+
+## Práctica multiproceso
 
 En esta práctica trabajaremos con procesos desde C. Para que haya diferencias significativas entre las ejecuciones debemos elegir una tarea que requiera tiempo, en este caso vamos a escribir por pantalla los números primos entre el número 100000 y el 200000.
 
@@ -18,7 +20,7 @@ Estas distintas veriones se ejecutaran en distintas máquinas con distintas cant
 | 4procesos    |   |   |   |
 
 
-## Toma de tiempo
+### Toma de tiempo
 
 Para la toma de tiempos podemos usar herramientas del sistema operativo como el comando ```time```
 
@@ -37,11 +39,11 @@ jorge@PSP:~/PSP-2223/UT1$ date;./algoQueTarda;date
 
 ```
 
-## Escritura en pantalla
+### Escritura en pantalla
 
 La función printf de la librería de C stdio.h está orientada a buffer, si queremos ver los números primos segun se generen sin necesidad de esperar la gestión del buffer debemos usar las funciones write en vez de ```printf```.
 
-## Versión mono proceso
+### Versión mono proceso
 
 Aquí se muestra el Pseudocódigo de la versión de 1 solo proceso. Un programa normal.
 
@@ -55,7 +57,7 @@ Desde 100000 hasta 200000
 FinDesde
 ```
 
-## Versión 2 procesos
+### Versión 2 procesos
 
 En esta verión colaborará el padre y el hijo
 
@@ -70,7 +72,7 @@ FinSi
 
 A la hora de dividir el trabajo debemos ser justos, si hacemos una división de 100000-150000 y 150000-200000 el que tenga el último tramo tendrá un trabajo mucho mayor. La mejor idea es divir el procesado de los pares e impares.
 
-## Versión multiproceso
+### Versión multiproceso
 
 En esta versión el padre arrancará N procesos, las tareas se llevarán a cabo por lo hijos y el padre estará esperándoles. El padre no realizará ni uno de los cálculos pero arrancará y coordinará los procesos hijos.
 
@@ -96,7 +98,7 @@ Sino soy padre
 
 NOTA: Sigue pensando en la mejor forma para dividir el trabajo.
 
-### Ejemplo de fork y for
+#### Ejemplo de fork y for
 
 ```c
 #include<stdio.h>
@@ -119,7 +121,21 @@ int main()
 ```
 
 
-## Para finalizar
+### Para finalizar
 
 Una vez que hayas rellenado la tabla, contesta a esta pregunta
 ¿Por qué se comportan así los tiempos?
+
+
+## Comunicación entre procesos
+
+### Pipes anónimos
+
+Escribe un programa en C que cree dos hijos. Después generará 100 números aleatorios y envía al hijo primero lo mútiplos de 4 y el resto al segundo hijo. Cada uno de los hijos realizará la suma y se la devolverá al padre.
+
+NOTA: Investiga las funciones para leer en un bucle while antes de lanzarte al problema con varios hijos.
+
+### Señales
+
+Crea un proceso que escriba "Interrúmpeme si puedes soy el PID: <pid>" y duerma 1 segundo. Cuando el usuario intente hacer un Ctrl+C el proceso manejará la situeción y se clonará con Fork.
+
