@@ -129,11 +129,16 @@ Una vez que hayas rellenado la tabla, contesta a esta pregunta
 
 ## Comunicación entre procesos
 
-### Pipes anónimos
+### Pipes
+
+Escribe un programa que cree un hijo. Después generará números aleatorios entre el 0 y el 20, hasta que el número aletaroio sea el 17. Cada Número se le enviará al hijo, el hijo al recibir un número lo escribe por pantalla y al final muestra la suma. El padre espera a que el hijo termine.
+
+NOTA: El padre deberá cerrar el fichero para que el hijo pueda salir del bucle.
+NOTA: Investiga las funciones para leer en un bucle while.
+
+### Pipes
 
 Escribe un programa en C que cree dos hijos. Después generará 100 números aleatorios y envía al hijo primero lo mútiplos de 4 y el resto al segundo hijo. Cada uno de los hijos realizará la suma y se la devolverá al padre.
-
-NOTA: Investiga las funciones para leer en un bucle while antes de lanzarte al problema con varios hijos.
 
 ### Señales
 
