@@ -133,6 +133,16 @@ Una vez que hayas rellenado la tabla, contesta a esta pregunta
 
 Escribe un programa que cree un hijo. Después generará números aleatorios entre el 0 y el 20, hasta que el número aletaroio sea el 17. Cada Número se le enviará al hijo, el hijo al recibir un número lo escribe por pantalla y al final muestra la suma. El padre espera a que el hijo termine.
 
+```
+// Envío
+int n = 42;
+write(pipe_w, &n, sizeof(n));
+
+// Recepción
+int n;
+read(pipe_r, &n, sizeof(n));
+```
+
 NOTA: El padre deberá cerrar el fichero para que el hijo pueda salir del bucle.
 NOTA: Investiga las funciones para leer en un bucle while.
 
