@@ -1,5 +1,9 @@
 package ut02hilos;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalTime;
+import java.util.Date;
+
 import javax.swing.JLabel;
 
 public class Contador implements Runnable {
@@ -25,13 +29,21 @@ public class Contador implements Runnable {
 		}
 	}
 	
+	public static String getCurrentTimeStamp() {
+	    SimpleDateFormat sdfDate = new SimpleDateFormat("HH:mm:ss.SSS");
+	    Date now = new Date();
+	    String strDate = sdfDate.format(now);
+	    return strDate;
+	}
+	
 	@Override
 	public void run() {
 		parar();
-		
+		SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss.S");
 		while(true) {
 			cont++;
-			_salida.setText(Integer.toString(cont));
+			//_salida.setText(Integer.toString(cont));
+			_salida.setText(getCurrentTimeStamp());
 			
 			try {
 				Thread.sleep(INTERVALO);
