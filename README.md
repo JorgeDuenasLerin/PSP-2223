@@ -19,7 +19,7 @@
   	- Repaso de red
   	- Prácticas con nc
   	- Prácticas de protocolos. Ejempo de HTTP y Autentificación
-  	- Introducción a Java TCP
+  	- Introducción a [Java TCP](https://www.geeksforgeeks.org/socket-programming-in-java/)
   - Semana 19-22
     - TCP Cliente
     - servidor
