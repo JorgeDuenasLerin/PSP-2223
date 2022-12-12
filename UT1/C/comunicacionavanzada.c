@@ -3,10 +3,18 @@
 #include <stdlib.h>
 #include <string.h>
 
+/*
+
+EJEMPLO A MEDIAS. NO SEGUIR POR ALUMNOS.
+
+TODO: Completar.
+
+*/
+
 int main(void )
 {
         int hijo1[2];
-	int hijo2[2];
+		int hijo2[2];
         pipe(hijo1); //Del padre al hijo
         pipe(hijo2); 
 

@@ -1,8 +1,5 @@
 /**
- * 
- */
-/**
- * @author jdueñas
+ * @author Jorge Dueñas Lerín
  *
  */
 module PSP2223 {
