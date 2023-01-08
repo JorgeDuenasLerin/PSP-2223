@@ -25,22 +25,25 @@
     - servidor
 - Enero
   - Semana 9-13
+	- Repaso TCP
+	- TCP Cliente y Servidor
+  - Semana 16-20
   	- UDP Envío y recepción
   	- UDP Broadcast
-  - Semana 16-20
-  	- Protocolo HTTP
-  	- Servidor web
   - Semana 23-27
-  	- Peticiones HTTP
-  	- Scrapper web. XPATH
+    - Protocolo HTTP
+  	- Servidor web
+  	- Autentificación web
+  	- Autentificación con token  	
 - Febrero
   - Semana 30-3
+	- Peticiones HTTP
+  	- Scrapper web. XPATH
+  - Semana 6-10
   	- Introducción a cifrado
   	- Cifrado simétrico
   	- Cifrado asimétrico
   	- Autentificación con clave pública
-  - Semana 6-10
-  	- Autentificación web
-  	- Autentificación con token
   - Semana 13-17
   	- Repaso
+	- Dudas
