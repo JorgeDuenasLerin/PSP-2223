@@ -25,8 +25,12 @@
     - servidor
 - Enero
   - Semana 9-13
-	- Repaso TCP
+    - Reconfigurado:
+		- Repaso TCP
+		- Ejempo de HTTP y Autentificación
+		- Introducción a [Java TCP](https://www.geeksforgeeks.org/socket-programming-in-java/)
 	- TCP Cliente y Servidor
+		- [Presentación Slideshare](https://slideplayer.com/slide/16292964/)
   - Semana 16-20
   	- UDP Envío y recepción
   	- UDP Broadcast
