@@ -34,6 +34,7 @@
   - Semana 16-20
   	- TCP Cliente y Servidor
 		- Continuación
+	- Ejercicio de ahorcado.
   	- UDP Envío y recepción
 		- [Ejemplo1](https://www.geeksforgeeks.org/working-udp-datagramsockets-java/)
 		- [DatagramSocket - Doc oficial](https://docs.oracle.com/javase/7/docs/api/java/net/DatagramSocket.html) 
