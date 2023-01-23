@@ -34,6 +34,7 @@
   - Semana 16-20
   	- TCP Cliente y Servidor
 		- Continuación
+  - Semana 23-27
   	- UDP Envío y recepción
 		- [Ejemplo1](https://www.geeksforgeeks.org/working-udp-datagramsockets-java/)
 		- [DatagramSocket - Doc oficial](https://docs.oracle.com/javase/7/docs/api/java/net/DatagramSocket.html) 
@@ -42,13 +43,12 @@
 		- IP 255
 	- UDP Multicast
 		- Investigación en clase
-  - Semana 23-27
+- Febrero
+  - Semana 30-3
     - Protocolo HTTP
   	- Servidor web
   	- Autentificación web
-  	- Autentificación con token  	
-- Febrero
-  - Semana 30-3
+  	- Autentificación con token
 	- Peticiones HTTP
   	- Scrapper web. XPATH
   - Semana 6-10
