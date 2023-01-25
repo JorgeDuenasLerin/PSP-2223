@@ -13,15 +13,18 @@ public class ClienteUDP {
 		try {
 			DatagramSocket ds =  new DatagramSocket();
 			byte buffer[] = "Hola mundo\n".getBytes();
+			//String ip = "192.168.20.200";
+			String ip = "192.168.255.255";
+			//ds.setBroadcast(true);
 			DatagramPacket p = new DatagramPacket(
 					buffer,
 					buffer.length,
-					InetAddress.getByName("192.168.20.200"),
-					8888
+					InetAddress.getByName(ip),
+					4321
 				);
 			
 			ds.send(p);
-			
+			ds.close();
 		} catch (SocketException e) {
 			e.printStackTrace();
 		} catch (UnknownHostException e) {
