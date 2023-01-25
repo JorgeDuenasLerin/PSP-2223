@@ -34,7 +34,7 @@
   - Semana 16-20
   	- TCP Cliente y Servidor
 		- Continuación
-	- Ejercicio de ahorcado.
+	- Ejercicio de [ahorcado](#Ahorcado)
   - Semana 23-27
   	- UDP Envío y recepción
 		- [Ejemplo1](https://www.geeksforgeeks.org/working-udp-datagramsockets-java/)
@@ -42,8 +42,10 @@
 		- [DatagramPacket - Doc oficial](https://docs.oracle.com/javase/7/docs/api/java/net/DatagramPacket.html) 
   	- UDP Broadcast
 		- IP 255
+		- Con [netcat](https://stackoverflow.com/a/63216462)
 	- UDP Multicast
-		- Investigación en clase
+		- Rangos de IPs especiales
+		- [Tutorial](https://www.developer.com/design/how-to-multicast-using-java-sockets/)
 - Febrero
   - Semana 30-3
     - Protocolo HTTP
@@ -60,3 +62,22 @@
   - Semana 13-17
   	- Repaso
 	- Dudas
+
+
+## Ahorcado
+
+Implementa un servidor de ahorcado Multithread con el protocolo TCP
+
+## Ejercicios UDP
+
+- Implementa un chat con UDP (Servidor - Cliente)
+- Analiza qué cambio tendrías que hacer para realizar un ahorcado con UDP
+- Haz una retransmisión desde Java en Broadcast
+- Haz una retransmisión desde Java en Multicast
+
+## Otros
+
+Vista el repositorio de pruebas de concepto de videojuegos
+
+[PoC VideoJuegos desde cero](https://github.com/JorgeDuenasLerin/Java-GUI-PoC-Juegos)
+
