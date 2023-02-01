@@ -14,18 +14,17 @@ public class MulticastSend {
 
 	public static void main(String[] args) {
 		try {
-			
+
 			Enumeration<NetworkInterface> nets = NetworkInterface.getNetworkInterfaces();
-	        for (NetworkInterface netint : Collections.list(nets)) {
-	            System.out.println(netint);
-	        }
-	        Scanner in = new Scanner(System.in);
-	        System.out.println("Especifica el nombre del interfaz");
-	        String iName = in.nextLine();
-	        NetworkInterface netIf = NetworkInterface.getByName(iName);
-	        System.out.println(netIf);
-	        
-	        
+			for (NetworkInterface netint : Collections.list(nets)) {
+				System.out.println(netint);
+			}
+			Scanner in = new Scanner(System.in);
+			System.out.println("Especifica el nombre del interfaz");
+			String iName = in.nextLine();
+			NetworkInterface netIf = NetworkInterface.getByName(iName);
+			System.out.println(netIf);
+
 			String msg = "Hello";
 			int port = 1234;
 
@@ -34,17 +33,17 @@ public class MulticastSend {
 			MulticastSocket s = new MulticastSocket(port);
 
 			s.joinGroup(group, netIf);
-			
+
 			/*
-			byte[] msgBytes = msg.getBytes();
-			DatagramPacket hi = new DatagramPacket(msgBytes, msgBytes.length, group);
-			s.send(hi);*/
+			 * byte[] msgBytes = msg.getBytes(); DatagramPacket hi = new
+			 * DatagramPacket(msgBytes, msgBytes.length, group); s.send(hi);
+			 */
 
 			// get their responses!
 			byte[] buf = new byte[1000];
 			DatagramPacket recv = new DatagramPacket(buf, buf.length);
 			s.receive(recv);
-			
+
 			System.out.println(new String(recv.getData(), 0, recv.getLength()));
 
 			// OK, I'm done talking - leave the group...
