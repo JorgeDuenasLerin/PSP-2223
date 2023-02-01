@@ -1,4 +1,4 @@
-package ut03.comunicaciones.udp;
+package ut03comunicaciones.udp;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
