@@ -81,3 +81,11 @@ Vista el repositorio de pruebas de concepto de videojuegos
 
 [PoC VideoJuegos desde cero](https://github.com/JorgeDuenasLerin/Java-GUI-PoC-Juegos)
 
+
+## Email
+
+```
+>openssl s_client -connect smtp.educa.madrid.org:587 -starttls smtp
+https://www.stevenrombauts.be/2018/12/test-smtp-with-telnet-or-openssl/
+https://halon.io/blog/how-to-test-smtp-servers-using-the-command-line
+```
