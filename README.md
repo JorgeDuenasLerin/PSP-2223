@@ -48,20 +48,20 @@
 		- [Tutorial](https://www.developer.com/design/how-to-multicast-using-java-sockets/)
 - Febrero
   - Semana 30-3
-    - Protocolo HTTP
+	- Repaso protocolos: TCP, UDP
+  - Semana 6-10
+	- Servicios
+	- Protocolo HTTP
   	- Servidor web
   	- Autentificación web
   	- Autentificación con token
 	- Peticiones HTTP
-  	- Scrapper web. XPATH
-  - Semana 6-10
+  - Semana 13-17
   	- Introducción a cifrado
   	- Cifrado simétrico
   	- Cifrado asimétrico
+	- Autentificación con tokens
   	- Autentificación con clave pública
-  - Semana 13-17
-  	- Repaso
-	- Dudas
 
 
 ## Ahorcado
