@@ -58,8 +58,8 @@
 	- Peticiones HTTP
   - Semana 13-17
   	- Introducción a cifrado
-  	- Cifrado simétrico
-  	- Cifrado asimétrico
+  	- [Cifrado simétrico](https://www.geeksforgeeks.org/symmetric-encryption-cryptography-in-java/?ref=lbp)
+  	- [Cifrado asimétrico](https://www.geeksforgeeks.org/asymmetric-encryption-cryptography-in-java/?ref=lbp)
 	- Autentificación con tokens
   	- Autentificación con clave pública
 
@@ -96,3 +96,8 @@ Vista el repositorio de pruebas de concepto de videojuegos
 https://www.stevenrombauts.be/2018/12/test-smtp-with-telnet-or-openssl/
 https://halon.io/blog/how-to-test-smtp-servers-using-the-command-line
 ```
+
+
+## Basic Auth
+
+https://en.wikipedia.org/wiki/Basic_access_authentication
