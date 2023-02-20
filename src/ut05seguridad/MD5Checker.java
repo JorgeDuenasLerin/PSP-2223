@@ -48,7 +48,7 @@ public class MD5Checker {
 			// TODO: handle exception
 		}
 		
-		return md5sum ;
+		return md5sum;
 	}
 
 }
