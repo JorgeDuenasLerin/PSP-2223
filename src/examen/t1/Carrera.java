@@ -1,4 +1,4 @@
-package examen;
+package examen.t1;
 
 public class Carrera {
 

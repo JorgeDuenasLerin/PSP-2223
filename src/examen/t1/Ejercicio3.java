@@ -1,4 +1,4 @@
-package examen;
+package examen.t1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
