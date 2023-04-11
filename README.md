@@ -98,12 +98,10 @@ Para probar el programa utiliza el comando netcat.
 
 ### Ampliaciones
 
-- Hacer que el recorrido del directorio inicial recursivo.
+- Hacer que el recorrido del directorio inicial recursivo
 - Hacer un cliente con GUI para el servidor
 - Hacer un cliente Android para el servidor
-- 
-
-
+- Aumentar los comandos que acepta el servidor para poder parar la canción. NOTA: requiere tocar código en el reproductor.
 
 
 ## Ahorcado
