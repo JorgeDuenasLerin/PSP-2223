@@ -73,6 +73,38 @@
 (https://github.com/hidratarse/PSP-2223/blob/main/Java/EV2/protocolos/src/ejercicios/UDP/ClienteUDP.java)
 
 
+## SpotUDP
+
+Crea un servidor capaz de reproducir música. Este enunciado se puede integrar con una aplicación móvil.
+
+El servidor se ejecutará recibiendo dos parámetros:
+- como primer parámetro recibirá una cadena de texto que representa el directorio donde está almacenada la música.
+- como segundo parámetro recibirá el puerto de escucha.
+
+Cuando se ejecute el programa guardará en una estructura de datos Java todas las canciones que encuentre en el directorio.
+
+```
+java whatever.SpotUDP /home/jdl/music/ 8888
+```
+
+Cuando un cliente se conecte al servidor podrá hacer dos tipo de peticiones:
+
+- LIST. El cliente enviará la cadena "LIST" y el servidor le devolverá varias líneas de texto con el nombre de las canciones disponibles.
+- PLAY <id>. El cliente enviará "PLAY <id>", donde id es la canción que se quiere reproducir. El id es el orden en el listado. Ejemplo "PLAY 0" reproducirá la primera canción.
+
+Una prueba de concepto de reproducción de música desde Java esta en este mismo repo [PoC-Reproductor](https://github.com/JorgeDuenasLerin/PSP-2223/blob/main/src/repaso/spotudp/POC.java)
+
+Para probar el programa utiliza el comando netcat.
+
+### Ampliaciones
+
+- Hacer que el recorrido del directorio inicial recursivo.
+- Hacer un cliente con GUI para el servidor
+- Hacer un cliente Android para el servidor
+- 
+
+
+
 
 ## Ahorcado
 
