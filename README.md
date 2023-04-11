@@ -105,6 +105,38 @@ Para probar el programa utiliza el comando netcat.
 - Hacer un cliente Android para el servidor
 - Aumentar los comandos que acepta el servidor para poder parar la canción. NOTA: requiere tocar código en el reproductor.
 
+## TCPChallenge
+
+Crea dos programas: servidor y cliente.
+
+### Servidor
+
+El programa servidor acepta dos parámetros: la ruta a un fichero.txt y un número de puerto.
+
+El fichero contendrá 10 líneas. Las líneas tienen el siguiente formato
+
+```N:Pregunta:Respuesta1:Respuesta2:Respuesta3:...:RespuestaN```
+
+- El primer número representa la respuesta correcta
+- La cadena representa la pregunta
+- Luego vienen un listado variable de respuestas
+
+El programa servidor leera esta información en el arranque y no la volverá a leer. La cargará en memoria.
+
+El servidor será MultiThread y aceptará peticiones TCP.
+
+### Thread
+
+Cada Thread atenderá a un cliente. El Thread escribirá la pregunta con las respuesta y esperará un número indicando la opción elegida.
+
+Cada respuesta acertada suma 1 punto. Cada respuesta fallada resta 1 punto.
+
+Al finalizar las 10 preguntas el programa le enviará al cliente el resultado final.
+
+### Cliente
+
+Crea un programa cliente que muestre al usuario cada pregunta, le parmita introducir su respuesta y enviarla al servidor y después muestre el la puntuación que envía el servidor.
+
 
 ## Ahorcado
 
