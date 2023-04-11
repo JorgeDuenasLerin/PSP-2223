@@ -14,7 +14,8 @@ public class POC {
 	public static void main(String[] args){
 		MakeSound speaker = new MakeSound();
 		// Debe ser ruta absoluta
-		String file = "D:\\JorgeDL\\MP3\\africa-toto.wav";
+		//String file = "D:\\JorgeDL\\MP3\\africa-toto.wav";
+		String file = "/home/folen/Workspace/módulos/PSP-2223/info/Oasis-Whatever.wav";
 		speaker.playSound(file);
 	}
 }

@@ -94,7 +94,7 @@ Cuando un cliente se conecte al servidor podrá hacer dos tipo de peticiones:
 
 Una prueba de concepto de reproducción de música desde Java esta en este mismo repo [PoC-Reproductor](https://github.com/JorgeDuenasLerin/PSP-2223/blob/main/src/repaso/spotudp/POC.java). NOTA: Solo reproduce fichero wav
 
-El fichero ```africa-toto.wav``` está disponible en el directorio [info](https://github.com/JorgeDuenasLerin/PSP-2223/tree/main/info)
+Los ficheros ```Oasis-Whatever.wav``` y ```africa-toto.wav``` están disponible en el directorio [info](https://github.com/JorgeDuenasLerin/PSP-2223/tree/main/info)
 
 Para probar el programa utiliza el comando netcat.
 
