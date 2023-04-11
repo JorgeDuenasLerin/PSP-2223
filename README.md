@@ -89,10 +89,12 @@ java whatever.SpotUDP /home/jdl/music/ 8888
 
 Cuando un cliente se conecte al servidor podrá hacer dos tipo de peticiones:
 
-- LIST. El cliente enviará la cadena "LIST" y el servidor le devolverá varias líneas de texto con el nombre de las canciones disponibles.
-- PLAY <id>. El cliente enviará "PLAY <id>", donde id es la canción que se quiere reproducir. El id es el orden en el listado. Ejemplo "PLAY 0" reproducirá la primera canción.
+- LIST. El cliente enviará la cadena ```LIST``` y el servidor le devolverá varias líneas de texto con el nombre de las canciones disponibles.
+- PLAY <id>. El cliente enviará ```PLAY <id>```, donde id es la canción que se quiere reproducir. El id es el orden en el listado. Ejemplo "PLAY 0" reproducirá la primera canción.
 
-Una prueba de concepto de reproducción de música desde Java esta en este mismo repo [PoC-Reproductor](https://github.com/JorgeDuenasLerin/PSP-2223/blob/main/src/repaso/spotudp/POC.java)
+Una prueba de concepto de reproducción de música desde Java esta en este mismo repo [PoC-Reproductor](https://github.com/JorgeDuenasLerin/PSP-2223/blob/main/src/repaso/spotudp/POC.java). NOTA: Solo reproduce fichero wav
+
+El fichero ```africa-toto.wav``` está disponible en el directorio [info](https://github.com/JorgeDuenasLerin/PSP-2223/tree/main/info)
 
 Para probar el programa utiliza el comando netcat.
 
