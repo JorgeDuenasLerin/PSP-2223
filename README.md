@@ -137,6 +137,32 @@ Al finalizar las 10 preguntas el programa le enviará al cliente el resultado fi
 
 Crea un programa cliente que muestre al usuario cada pregunta, le parmita introducir su respuesta y enviarla al servidor y después muestre el la puntuación que envía el servidor.
 
+## Enviador de chistes/datos
+
+Enunciado en la pizarra.
+
+Recibe tramas UDP con el formato:
+
+- ```C;N;email@asd.es```
+- ```D;N;email@asd.es```
+
+El primer caracter indica si es chiste o dato
+
+
+
+
+## Sincronización de Threads
+
+Crea un programa que emita por Broadcast UDP palíndromos. Para ello utiliza un esquema de productor/consumidor.
+
+El programa recibirá la ruta al fichero con [palabras](https://github.com/JorgeDuenasLerin/diccionario-espanol-txt/blob/master/0_palabras_todas.txt) y el puerto UDP al que enviará la información por Broadcast.
+
+Habrá un thread que buscará palíndromos en el fichero y lo añadirá a un array sincronizado.
+
+Un palíndromo es una que se lee igual al derecho que al revés.
+
+[Ejemplo producto/consumidor](https://www.discoduroderoer.es/ejemplo-modelo-productor-consumidor-en-java/)
+
 
 ## Ahorcado
 
