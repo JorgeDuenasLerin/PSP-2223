@@ -73,6 +73,96 @@
 (https://github.com/hidratarse/PSP-2223/blob/main/Java/EV2/protocolos/src/ejercicios/UDP/ClienteUDP.java)
 
 
+## SpotUDP
+
+Crea un servidor capaz de reproducir música. Este enunciado se puede integrar con una aplicación móvil.
+
+El servidor se ejecutará recibiendo dos parámetros:
+- como primer parámetro recibirá una cadena de texto que representa el directorio donde está almacenada la música.
+- como segundo parámetro recibirá el puerto de escucha.
+
+Cuando se ejecute el programa guardará en una estructura de datos Java todas las canciones que encuentre en el directorio.
+
+```
+java whatever.SpotUDP /home/jdl/music/ 8888
+```
+
+Cuando un cliente se conecte al servidor podrá hacer dos tipo de peticiones:
+
+- LIST. El cliente enviará la cadena ```LIST``` y el servidor le devolverá varias líneas de texto con el nombre de las canciones disponibles.
+- PLAY <id>. El cliente enviará ```PLAY <id>```, donde id es la canción que se quiere reproducir. El id es el orden en el listado. Ejemplo "PLAY 0" reproducirá la primera canción.
+
+Una prueba de concepto de reproducción de música desde Java esta en este mismo repo [PoC-Reproductor](https://github.com/JorgeDuenasLerin/PSP-2223/blob/main/src/repaso/spotudp/POC.java). NOTA: Solo reproduce fichero wav
+
+Los ficheros ```Oasis-Whatever.wav``` y ```africa-toto.wav``` están disponible en el directorio [info](https://github.com/JorgeDuenasLerin/PSP-2223/tree/main/info)
+
+Para probar el programa utiliza el comando netcat.
+
+### Ampliaciones
+
+- Hacer que el recorrido del directorio inicial recursivo
+- Hacer un cliente con GUI para el servidor
+- Hacer un cliente Android para el servidor
+- Aumentar los comandos que acepta el servidor para poder parar la canción. NOTA: requiere tocar código en el reproductor.
+
+## TCPChallenge
+
+Crea dos programas: servidor y cliente.
+
+### Servidor
+
+El programa servidor acepta dos parámetros: la ruta a un fichero.txt y un número de puerto.
+
+El fichero contendrá 10 líneas. Las líneas tienen el siguiente formato
+
+```N:Pregunta:Respuesta1:Respuesta2:Respuesta3:...:RespuestaN```
+
+- El primer número representa la respuesta correcta
+- La cadena representa la pregunta
+- Luego vienen un listado variable de respuestas
+
+El programa servidor leera esta información en el arranque y no la volverá a leer. La cargará en memoria.
+
+El servidor será MultiThread y aceptará peticiones TCP.
+
+### Thread
+
+Cada Thread atenderá a un cliente. El Thread escribirá la pregunta con las respuesta y esperará un número indicando la opción elegida.
+
+Cada respuesta acertada suma 1 punto. Cada respuesta fallada resta 1 punto.
+
+Al finalizar las 10 preguntas el programa le enviará al cliente el resultado final.
+
+### Cliente
+
+Crea un programa cliente que muestre al usuario cada pregunta, le parmita introducir su respuesta y enviarla al servidor y después muestre el la puntuación que envía el servidor.
+
+## Enviador de chistes/datos
+
+Enunciado en la pizarra.
+
+Recibe tramas UDP con el formato:
+
+- ```C;N;email@asd.es```
+- ```D;N;email@asd.es```
+
+El primer caracter indica si es chiste o dato
+
+
+
+
+## Sincronización de Threads
+
+Crea un programa que emita por Broadcast UDP palíndromos. Para ello utiliza un esquema de productor/consumidor.
+
+El programa recibirá la ruta al fichero con [palabras](https://github.com/JorgeDuenasLerin/diccionario-espanol-txt/blob/master/0_palabras_todas.txt) y el puerto UDP al que enviará la información por Broadcast.
+
+Habrá un thread que buscará palíndromos en el fichero y lo añadirá a un array sincronizado.
+
+Un palíndromo es una que se lee igual al derecho que al revés.
+
+[Ejemplo producto/consumidor](https://www.discoduroderoer.es/ejemplo-modelo-productor-consumidor-en-java/)
+
 
 ## Ahorcado
 
